@@ -3,37 +3,60 @@ h1 { font-family: "Andale Mono", AndaleMono, monospace;
 	font-style: normal; 
 	font-variant: normal; 
 	font-weight: 700; 
-	line-height: 26.4px; } 
+	line-height: 26.4px;
+	text-align: center } 
 h2 { font-family: "Andale Mono", AndaleMono, monospace; 
 	font-size: 18px; 
 	font-style: normal; 
 	font-variant: normal; 
 	font-weight: 700; 
-	line-height: 26.4px; } 
+	line-height: 26.4px;
+	text-align: center } 
 h3 { font-family: "Andale Mono", AndaleMono, monospace; 
 	font-size: 14px; 
 	font-style: normal; 
 	font-variant: normal; 
 	font-weight: 700; 
-	line-height: 15.4px; } 
+	line-height: 15.4px;
+	text-align: center } 
 p { font-family: "Andale Mono", AndaleMono, monospace; 
 	font-size: 12px; 
 	font-style: normal; 
 	font-variant: normal; 
 	font-weight: 400; 
-	line-height: 20px; } 
+	line-height: 20px;
+	text-align: center } 
 blockquote { font-family: "Andale Mono", AndaleMono, monospace; 
 	font-size: 21px; 
 	font-style: normal; 
 	font-variant: normal; 
 	font-weight: 400; 
-	line-height: 30px; } 
+	line-height: 30px;
+	text-align: center } 
 pre { font-family: "Andale Mono", AndaleMono, monospace; 
 	font-size: 13px; 
 	font-style: normal; 
 	font-variant: normal; 
 	font-weight: 400; 
-	line-height: 18.5714px; }
+	line-height: 18.5714px;
+	text-align: center }
+
+.center {
+  border: 2px dotted black;
+  padding: 20px;
+  margin: auto;
+  width: 40%;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.center p {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
 
 /* unvisited link */
 a:link {
@@ -45,12 +68,8 @@ a:visited {
   color: black;
 }
 
-/* mouse over link */
-a:hover {
+/* mouse over link and selected link */
+a:hover, a:active {
   color: black;
-}
-
-/* selected link */
-a:active {
-  color: black;
+  font-weight:bold;
 }
